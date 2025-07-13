@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+             font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        .hero-section{
+           background-image: url(images/home-hero.jpg);
+           height: 100vh;
+           background-size: cover;
+           background-blend-mode: multiply;
+           background-color: rgba(0, 0, 0, 0.397)
+        }
+        .nav-link{
+            color: white;
+        }
+        .nav-link:hover{
+            color: #d1d1d1;
+        }
+        .btn-1{
+           background-color: #fb5607;
+           transition: all 0.3s ease;
+        }
+      .btn-1:hover{
+        filter: brightness(1.15);
+      }
+      .luxury-heading{
+        background-color: #D1D1D145;
+        
+      }
+      .explore-heading{
+          font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size:60px;
+      }
+      .btn-2{
+        background-image: url(images/right-arrow-svgrepo-com.svg);
+        background-repeat: no-repeat;
+         background-color: #fb5607;
+       background-position: center right ;
+       background-size: 25px;
+      max-width: 200px;
+     padding: 20px;
+     padding-right: 30px;
+      transition: all 0.3s ease;
+      }
+      .btn-2:hover{
+        filter: brightness(1.15);
+      }
+      .btn-3{
+        background-image: url(images/play-circle-svgrepo-com.svg);
+        background-repeat: no-repeat;
+      color: white;
+       background-position: center left ;
+       background-size: 25px;
+         background-color: #d1d1d163;
+        max-width: 200px;
+     padding: 20px;
+     padding-left: 30px;
+     transition: all .3s;
+      }
+      .btn-3:hover{
+        background-color: #fb5607;
+      }
+   /* @media (min-width: 576px) {
+        .hero-content {
+          padding-left: 3rem;
+          margin-top:20px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .hero-content {
+          padding-left: 4.5rem;
+        }
+      } */
+       @media (min-width: 576px) {
+        .hero-content {
+         
+          margin-top:20px;
+        }
+      }
+      .heading-2{
+       background-color: #fb540742;
+       color: #fb5607;
+       letter-spacing: 1px;
+      }
+      .heading-3{
+         font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size:60px;
+      }
+      .long-img{
+        border-radius: 90px;
+      }
+      .country-name{
+        font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+      }
+      .round-circle{
+        border-radius: 300px;
+      }
+      .paris-section{
+        height: 160vh;
+        background-color:#fb540711 ;
+      }
+      .about{
+        background-color:white ;
+        color: #fb5607;
+      }
+      .journey-heading{
+        font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+      }
+    .lists{
+        list-style-type: none;
+    
+    }
+      .list::before{
+        content: '☑';
+        color: #fb5607;
+       
+      }
+      .background-img{
+        background-image: url(images/destination-1.jpg);
+        height: 60vh;
+        border-radius: 100px;
+          background-blend-mode: multiply;
+           background-color: rgba(0, 0, 0, 0.397)
+      }
+      .background-heading{
+         font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  
+
+      }
+      .background-img-2{
+        background-image: url(images/destination-2.jpg);
+          height: 60vh;
+        border-radius: 100px;
+         background-blend-mode: multiply;
+           background-color: rgba(0, 0, 0, 0.397)
+      }
+        .background-img-3{
+        background-image: url(images/destination-3.jpg);
+          height: 60vh;
+        border-radius: 100px;
+         background-blend-mode: multiply;
+           background-color: rgba(0, 0, 0, 0.397)
+      }
+        .background-img-4{
+        background-image: url(images/destination-4.jpg);
+          height: 60vh;
+        border-radius: 100px;
+         background-blend-mode: multiply;
+           background-color: rgba(0, 0, 0, 0.397)
+      }
+        .background-img-5{
+        background-image: url(images/destination-4.jpg);
+          height: 60vh;
+        border-radius: 100px;
+         background-blend-mode: multiply;
+           background-color: rgba(0, 0, 0, 0.397)
+      }
+        .background-img-5{
+        background-image: url(images/destination-5.jpg);
+          height: 60vh;
+        border-radius: 100px;
+         background-blend-mode: multiply;
+           background-color: rgba(0, 0, 0, 0.397)
+      }
+      .hero-section-2{
+        background-image: url(images/home-tour.jpg);
+        height: 100vh;
+        background-blend-mode: multiply;
+         background-color: rgba(0, 0, 0, 0.397);
+         background-size:cover;
+      }
+    .journey-heading-2{
+          font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    }
+    .why-us{
+         background-color: #d1d1d163;
+    }
+     .comma{
+        font-size: 100px;
+        color: #fb5607;
+     }
+     .name{
+         font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+     }
+     .last-section{
+        background-color: #fb5607;
+        height: 94vh;
+     }
+     @media (max-width: 575.98px) {
+ .last-section{
+    margin-top: 500px;
+ }
+}
+.last-btn{
+    color: #fb5607;
+}
+  @media (max-width: 575.98px) {
+ .girly-img{
+    width: 193px;
+    padding-top: 4px;
+ }
+}
+/* .girl-img{
+    position: absolute;
+    top: 0px;
+    bottom: 20px;
+} */
+.footer{
+  background-color: black;
+  height: 80vh;
+}
+.footer-links{
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ @media (max-width: 575.98px) {
+ 
+ .footer{
+background-color: Black;
+height: 140vh;
+ }
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid hero-section">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent p-3">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+     <img src="images/header-logo-1.svg" alt="" class="img-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Packages</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button class="btn-1 p-3 rounded-4 text-white border-0 ms-5" type="submit">Plan Your Trip</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container hero-content position-absolute start-0 top-50 translate-middle-y">
+     <h5 class="luxury-heading text-uppercase rounded-4 p-2 text-white d-inline">Experience Luxury Travel</h5>
+    <h1 class="explore-heading text-white fw-bold">Explore the World <br> Like Never Before</h1>
+    <p class="hero-para text-white">Curated journeys to the world's most extraordinary destinations. Let us transform <br> your travel dreams into unforgettable memories.</p>
+    <button class="btn-2 border-0 rounded-4 me-3">Start Planning</button>
+  <button class="btn-3 border-0 rounded-4">Watch Video</button>
+</div>
+    </div>
+
+<div class="container mt-5 text-center">
+    <h6 class="heading-2 text-uppercase d-inline p-2 rounded-5">popular destinations</h6>
+    <h1 class="heading-3 mt-4 fw-bold mb-5">Handpicked Packages</h1>
+</div>
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-12 col-md-4">
+            <div class="shape position-relative">
+              <img src="images/packages-01.jpg" alt="" class="img-fluid long-img">
+            <div class="round-circle bg-white h-50 w-75 pb-sm-5 text-center position-absolute top-100 start-50 p-5 translate-middle">
+            <h6 class="heading-2 text-uppercase d-inline p-2 rounded-5">EUROPE</h6>
+        
+            <h2 class="country-name mt-2 fw-bold">Spain</h2>
+            <p class="price">From $2,499</p>
+            </div>
+            </div>
+        </div>
+
+
+
+         <div class="col-12 col-md-4">
+            <div class="shape position-relative">
+              <img src="images/packages-01.jpg" alt="" class="img-fluid long-img">
+            <div class="round-circle bg-white h-50 w-75 text-center position-absolute top-100 start-50 p-5 translate-middle">
+            <h6 class="heading-2 text-uppercase d-inline p-2 rounded-5">EUROPE</h6>
+        
+            <h2 class="country-name mt-2 fw-bold">Australia</h2>
+            <p class="price">From $2,499</p>
+            </div>
+            </div>
+        </div>
+
+
+
+         <div class="col-12 col-md-4">
+            <div class="shape position-relative">
+              <img src="images/packages-01.jpg" alt="" class="img-fluid long-img">
+            <div class="round-circle bg-white h-50 w-75 text-center position-absolute position-absolute top-100 start-50 p-5 translate-middle">
+            <h6 class="heading-2 text-uppercase d-inline p-2 rounded-5">EUROPE</h6>
+        
+            <h2 class="country-name mt-2 fw-bold">Egypt</h2>
+            <p class="price">From $2,499</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid paris-section mt-5 ">
+    <div class="container">
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="col-12 col-md-6 ">
+        <img src="images/image-6.png" alt="" class="img-fluid">
+    </div>
+    <div class="col-12 col-md-6">
+    <h5 class="about d-inline p-2 rounded-5">ABOUT US</h5>
+    <h1 class="journey-heading fw-bold mt-4">Your Journey, Our <br> Passion</h1>
+    <p class="journey-para">We believe that travel is more than just visiting new places; it's about creating memories, experiencing diverse cultures, and discovering the wonders of the world. With years of experience in the travel industry, our dedicated team is committed to providing exceptional travel experiences tailored to your unique desires and needs.</p>
+    <div class="parent-div-1 mt-4 d-none d-md-inline d-md-flex">
+    <div class="img">
+        <img src="images/journey-img.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="bullets">
+        <ul class="lists">
+            <li class="list"> Budget-Friendly</li>
+              <li class="list"> Luxurious Getaways</li>
+                <li class="list"> Trusted Local Guides</li>
+        </ul>
+         <button class="btn-2 border-0 rounded-4 ms-4 mt-4 text-white">Learn More</button>
+    </div>
+    </div>
+
+    
+</div>
+    </div>
+</div>
+</div>
+</div>
+<div class="container mt-5">
+    <div class="row g-3">
+        <div class="col-12 col-md-4">
+ <h6 class="heading-2 text-uppercase d-inline p-2 rounded-5">CHOOSE YOUR PLACE</h6>
+ <h1 class="journey-heading fw-bold mt-4">Popular <br> Destinations</h1>
+ <p class="destination-para">Join us as we explore the wonders of the globe, one <br> incredible journey at a time.</p>
+  <button class="btn-2 border-0 rounded-4 mt-4 text-white">Find Packages</button>
+        </div>
+         <div class="col-12 col-md-4">
+ <div class="background-img d-flex align-items-end justify-content-center">
+<h4 class="background-heading text-white fw-bold">Amazon Forest</h4>
+ </div>
+        </div>
+        <div class="col-12 col-md-4">
+ <div class="background-img-2 d-flex align-items-end justify-content-center">
+<h4 class="background-heading text-white fw-bold">New Zealand</h4>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row g-3">
+
+  <div class="col-12 col-md-4">
+    <div class="background-img-3 d-flex align-items-end justify-content-center">
+      <h4 class="background-heading text-white fw-bold">London</h4>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <div class="background-img-4 d-flex align-items-end justify-content-center">
+      <h4 class="background-heading text-white fw-bold">Europe</h4>
+    </div>
+  </div>
+
+
+  <div class="col-12 col-md-4">
+    <div class="background-img-5 d-flex align-items-end justify-content-center">
+      <h4 class="background-heading text-white fw-bold">Africa</h4>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid hero-section-2 mt-5">
+<div class="row d-flex align-items-baseline ">
+    <div class="col-md-6 order-2 order-md-1">
+        <div class="white-box bg-white p-4 w-75 mt-5 ms-4 rounded-4 ">
+<i class="fa-solid fa-plane fa-2xl" style="color: #fb5607;"></i>
+<h4 class="customize-heading mt-4">Customized Packages</h4>
+<p class="cutomize-para">Tailor-made itineraries to suit your preferences and <br> interests, ensuring a unique travel experience every <br> time.</p>
+<hr>
+  <br>     
+
+          
+<i class="fa-solid fa-child-reaching fa-2xl" style="color: #fb5607;"></i>
+<h4 class="customize-heading mt-4">Adventure Tours</h4>
+<p class="cutomize-para">Explore thrilling destinations and activities, from <br> mountain trekking to scuba diving, for the adrenaline <br> seekers.</p>
+<hr>
+   
+<br>
+        
+<i class="fa-solid fa-bath fa-2xl" style="color: #fb5607;"></i>
+<h4 class="customize-heading mt-4">Luxury Vacations</h4>
+<p class="cutomize-para">Explore thrilling destinations and activities, from <br> mountain trekking to scuba diving, for the adrenaline <br> seekers.</p>
+<hr>
+        </div>
+    </div>
+ 
+     <div class="col-md-6 order-1 order-md-2 mt-4 mt-md-0 ms-4 ms-md-0">
+       <h5 class="why-us d-inline p-2 rounded-5 text-white">WHY US</h5> 
+        <h1 class="journey-heading-2 fw-bold mt-4 text-white">Crafting <br> Unforgettable <br> Journeys</h1>
+     </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container text-center d-none d-md-block">
+   <h6 class="heading-2 text-uppercase d-inline p-2 rounded-5">Testimonials</h6> 
+
+   <p class="comma">&#10078;</p>
+   <p class="review-para">“An absolutely incredible experience! The attention to detail and personalized  <br> service made our Maldives trip unforgettable. Highly recommend!”</p>
+   <img src="images/home-review.png" alt="" class="img-fluid">
+   <h5 class="name fw-bold mt-3 mb-5">James Anderson</h5>
+</div>
+
+<div class="container-fluid last-section">
+   
+    <div class="container position">
+         <div class="row position-relative">
+            <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
+<h1 class="journey-heading fw-bold mt-4 text-white">Ready to Start Your <br> Adventure?</h1>
+<p class="adventure-para text-white">Let us help you create the perfect journey. Our travel experts are <br>
+     ready to craft your dream vacation.</p>
+     <button class="last-btn p-3 bg-white border-0 rounded-4 w-25">Start Planning</button>
+     </div>
+     <div class="col-12 col-md-6">
+        <div class="girl-img">
+        <img src="images/image-12.png" alt="" class="img-fluid girly-img">
+        </div>
+     </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid footer d-flex justify-content-center align-items-center">
+<div class="container footer-container">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <img src="images/header-logo-1.svg" alt="" class="img-fluid pb-4">
+      <p class="footer-para text-white">Your trusted partner for extraordinary travel experiences since 2015.</p>
+    </div>
+
+<div class="col-12 col-md-3">
+  <h5 class="footer-links text-white pb-4">Quick Links</h5>
+<a href="" class="footer-link text-white text-decoration-none">Home</a>
+<br>
+<br>
+<a href="" class="footer-link text-white text-decoration-none">About</a>
+<br>
+<br>
+<a href="" class="footer-link text-white text-decoration-none">Packages</a>
+<br>
+<br>
+<a href="" class="footer-link text-white text-decoration-none">Contact</a>
+</div>
+
+<div class="col-12 col-md-3 text-white">
+  <h5 class="footer-links text-white pb-4">Contact</h5>
+<p class="footer-para">455 West Orchard Street Kings Mountain, NC 280867</p>
+<i class="fa-solid fa-phone" style="color: #fb5607;"></i> +088 (246) 642-27-10 <br>
+<br>
+<i class="fa-solid fa-envelope" style="color: #fb5607;"></i> example@gmail.com
+
+</div>
+
+<div class="col-12 col-md-3">
+  <h5 class="footer-links text-white pb-4">Follow Us</h5>
+<a href="" class="footer-link text-white text-decoration-none">Instagram</a>
+<br>
+<br>
+<a href="" class="footer-link text-white text-decoration-none">Twitter</a>
+<br>
+<br>
+<a href="" class="footer-link text-white text-decoration-none">Linkedin</a>
+<br>
+<br>
+<a href="" class="footer-link text-white text-decoration-none">Facebook</a>
+</div>
+
+
+
+  </div>
+</div>
+</div>
+</body>
+</html>
